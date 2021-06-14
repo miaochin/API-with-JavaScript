@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ede5e9;
+}
+
+#app-interface {
+  width: 400px;
+  height: 550px;
+  background: whitesmoke;
+  border: 0.5px solid gray;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 5px 5px 24px -3px #a6b0a8;
+}
+
+h1 {
+  background: #3e517a;
+  padding-top: 10px;
+  color: whitesmoke;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+#search {
+  margin-top: 25px;
+}
+
+input {
+  width: 220px;
+  border: 1px solid rgb(204, 200, 200);
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  padding: 3px;
+}
+
+#search button {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin: 5px 3px;
+  margin-bottom: 15px;
+  position: relative;
+  top: 10px;
+}
+
+li {
+  margin: 4px;
+  margin-left: 45px;
+  padding-left: 10px;
+}
+
+#country-flag {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin: 6px 0px 6px 35px;
+  border: 1px solid rgb(167, 164, 164);
+}
+
+p {
+  font-size: 20px;
+}
+
+.flag,
+.language {
+  width: 80%;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.country-lang {
+  margin: 10px 0px;
+  overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}

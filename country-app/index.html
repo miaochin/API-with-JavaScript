@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Country App</title>
+  </head>
+  <body>
+    <div id="app-interface">
+      <h1>Country</h1>
+      <div id="search">
+        <input id="search-country" type="text" placeholder="Search country..." /><button id="search-button"><i class="fas fa-search"></i></button>
+      </div>
+      <h2 class="hidden" id="country-name">Taiwan</h2>
+      <div class="flag hidden">
+        <p>Flag</p>
+        <img id="country-flag" src="https://restcountries.eu/data/twn.svg" alt="flag" />
+      </div>
+      <div class="language hidden">
+        <p>Language</p>
+        <ul class="country-lang"></ul>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
