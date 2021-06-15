@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Drinks App</title>
+  </head>
+  <body>
+    <div class="app-interface">
+      <div class="home-interface">
+        <h2>Find your favorite drink!</h2>
+        <div class="search">
+          <input type="text" id="search-text" />
+          <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div>
+          <ul class="drink-list"></ul>
+        </div>
+        <p id="remind">You may scroll down to see more!</p>
+        <div class="favor-list">
+          <button id="favorite"><i style="margin-right: 5px" class="fas fa-heart"></i>My favorite list!</button>
+        </div>
+      </div>
+      <div class="favorite-interface hidden">
+        <h2>My favorite drinks!</h2>
+        <div>
+          <ul class="favorite-drink-list"></ul>
+        </div>
+        <p id="remind-fav">You may scroll down to see more!</p>
+        <div class="home-list">
+          <button id="home"><i style="margin-right: 5px" class="fas fa-home"></i>Go back to home!</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
