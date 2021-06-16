@@ -10,7 +10,18 @@ const language = document.querySelector('.language');
 
 
 searchBtn.addEventListener('click', () => {
-    getCountryInfo();
+    let empty_count = 0;
+    for (let i = 0; i < country.value.length; i++) {
+        if (country.value[i] == ' ') {
+            empty_count++;
+        }
+    }
+    if (empty_count == country.value.length) {
+        window.alert('The input can not be empty!');
+    }
+    else {
+        getCountryInfo();
+    }
 })
 
 country.addEventListener("keyup", (e) => {
