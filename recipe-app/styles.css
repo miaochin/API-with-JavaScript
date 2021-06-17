@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #e2ddf3;
+}
+
+h1 {
+  height: 100px;
+  padding: 20px 0px;
+  margin: 10px;
+  font-size: 45px;
+}
+
+.search {
+  margin: 10px 0px;
+}
+
+#search-text {
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+  outline: none;
+  border: 0.5px solid black;
+  overflow: hidden;
+  background: transparent;
+}
+
+#search-button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#search-button:hover {
+  font-size: 19.5px;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 150px;
+  margin: 5px 100px;
+}
+
+.recipe {
+  width: 289px;
+  height: 400px;
+  margin: 15px 10px;
+  padding: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgb(194, 190, 190);
+  box-shadow: 5px 5px 27px -3px #a6b0a8;
+  background: rgb(242, 237, 237);
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.get-recipe {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: #d4c5c7;
+}
+
+.get-recipe:hover {
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.name {
+  margin: 15px;
+  width: 230px;
+  height: 90px;
+  overflow: scroll;
+  text-align: center;
+}
+
+.recipe-detail {
+  position: fixed;
+  top: 165px;
+  left: 421px;
+  bottom: 100px;
+  width: 596px;
+  padding: 30px;
+  height: 450px;
+  overflow: scroll;
+  border-radius: 8px;
+  border: 1px solid rgb(68, 62, 62, 0.3);
+  background: rgb(68, 62, 62, 0.9);
+  color: whitesmoke;
+}
+
+.d-name {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.close-recipe {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  color: whitesmoke;
+  background: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.d-instructions {
+  padding: 10px 20px 20px 20px;
+  text-align: justify;
+}
+
+.hidden {
+  display: none;
+}
