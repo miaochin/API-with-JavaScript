@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Nanum+Gothic&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Lato", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search {
+  margin: 70px 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#search-text,
+#search-button {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin: 5px 10px;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.data {
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 5px 5px 39px -3px #a6b0a8;
+}
+
+.summary {
+  background: rgb(245, 221, 2);
+  text-align: center;
+  padding: 25px 45px;
+}
+
+#summary-num {
+  font-size: 70px;
+}
+
+#place {
+  color: #94552b;
+}
+
+.deaths,
+.recovered,
+.active {
+  position: relative;
+  margin: 10px 20px;
+  padding: 15px 0px;
+  border-bottom: 1px solid gray;
+}
+
+#recovered-num,
+#deaths-num,
+#active-num {
+  position: absolute;
+  right: 5px;
+}
+
+#recovered-num {
+  color: green;
+}
+
+#deaths-num {
+  color: rgb(226, 8, 8);
+}
+
+#active-num {
+  color: rgb(0, 89, 255);
+}
+
+.date {
+  margin: 10px 20px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+#date {
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  font-size: 15px;
+  color: gray;
+}

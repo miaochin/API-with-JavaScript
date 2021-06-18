@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Covid19 App</title>
+  </head>
+  <body>
+    <div class="search">
+      <input id="search-text" type="text" placeholder="Search..." />
+      <button id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="data">
+      <div class="summary">
+        <p>Coronavirus Confirmed Cases, <span id="place">World</span> :</p>
+        <p id="summary-num">176,516,221</p>
+      </div>
+      <div class="deaths">
+        <p>Deaths <span id="deaths-num">3,822,601</span></p>
+      </div>
+      <div class="recovered">
+        <p>Recovered <span id="recovered-num">114,886,455</span></p>
+      </div>
+      <div class="active">
+        <p>Active <span id="active-num">57,807,165</span></p>
+      </div>
+      <div class="date">
+        <p id="date">Date: 2021-06-15</p>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
